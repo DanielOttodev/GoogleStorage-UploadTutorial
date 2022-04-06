@@ -1,0 +1,18 @@
+{
+  "name": "googlestorage-tutorial",
+  "version": "1.0.0",
+  "description": "Google Storage Tutorialk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon index"
+  },
+  "author": "Daniel Otto",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^5.18.3",
+    "express": "^4.17.3",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.15"
+  }
+}
