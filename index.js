@@ -14,13 +14,13 @@ const multer = Multer({
   },
 });
 
-let projectId = "YOUR-PROJECTID"; // Get this from Google Cloud
-let keyFilename = "PATH-TO-YOUR-KEYFILE.json"; // Get this from Google Cloud -> Credentials -> Service Accounts
+let projectId = "dreamikai-backendv2"; // Get this from Google Cloud
+let keyFilename = "mykey.json"; // Get this from Google Cloud -> Credentials -> Service Accounts
 const storage = new Storage({
   projectId,
   keyFilename,
 });
-const bucket = storage.bucket("YOUR-STORAGE-BUCKET"); // Get this from Google Cloud -> Storage
+const bucket = storage.bucket("dreamikaiimage"); // Get this from Google Cloud -> Storage
 
 // Gets all files in the defined bucket
 app.get("/upload", async (req, res) => {
